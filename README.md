@@ -11,19 +11,19 @@ this project uses 😀:
 * [Rollup-plugin-terser](https://github.com/TrySound/rollup-plugin-terser) to minify the generated umd bundle  using [terser](https://github.com/fabiosantoscode/terser)
 
 
-###How to use it:
+### How to use it:
 just use the template, clone the repo and install dev dependencies with : 
 ```bash
 npm install
 ```
 
-###How to build Your_Own_Library_Name in dist directory : 
+### How to build Your_Own_Library_Name in dist directory : 
 ```bash
 npm run build
 ```
 
 
-###Initial template configuration steps :
+### Initial template configuration steps :
 This is a template to help you bundle your TypeScript **Your_Own_Library_Name** Library with Rollup.Js in ES, CommonJS and UMD format.
 
 *You better delete this section of the readme once you are ready to go*.
@@ -32,7 +32,7 @@ This is a template to help you bundle your TypeScript **Your_Own_Library_Name** 
 2. Put your own TypeScript files in the *src* directory 
 3. Adapt all files to your need...
 
-###Documentation
+### Documentation
 
 The [Documentation of Your_Own_Library_Name](https://lao-tseu-is-alive.github.io/cgil-2dgeom/docs/) 
 is available under the docs directory and can be 

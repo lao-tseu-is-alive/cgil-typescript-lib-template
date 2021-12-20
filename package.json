@@ -1,0 +1,53 @@
+{
+  "name": "Your_Own_Library_Name",
+  "version": "1.0.0",
+  "description": "Your_Own_Library_Name is a library to help you with...",
+  "main": "dist/Your_Own_Library_Name.cjs.js",
+  "module": "dist/Your_Own_Library_Name.esm.js",
+  "browser": "dist/Your_Own_Library_Name.umd.js",
+  "types": "dist/Your_Own_Library_Name.d.ts",
+  "files": [
+    "/dist",
+    "/examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "dev": "rollup -c -w",
+    "docs": "typedoc --tsconfig ./tsconfig.json --out docs src",
+    "prebuild": "npm run clean",
+    "build": "rollup -c",
+    "examples": "python -m SimpleHTTPServer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Your_Own_Git_Account_Name/Your_Own_Library_Name.git"
+  },
+  "keywords": [
+    "Your_Own_Library_Name",
+    "javascript",
+    "rollup",
+    "typescript"
+  ],
+  "author": "Your_Own_Git_Account_Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Your_Own_Git_Account_Name/Your_Own_Library_Name/issues"
+  },
+  "homepage": "https://github.com/Your_Own_Git_Account_Name/Your_Own_Library_Name#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.7.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "rollup": "^2.61.1",
+    "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^2.3.1",
+    "typedoc": "^0.22.10",
+    "typescript": "^4.5.4"
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Testing cgil-geom2d with UMD library</title>
+   <script src="../dist/Your_Own_Library_Name.umd.js"></script>
+  <style>
+    html{
+      font-family: Arial, Helvetica, SansSerif;
+      font-size: 1.2rem;
+      margin: 2rem;
+    }
+    #cgcode {
+      display: block;
+      background: #000066;
+      color: rgba(121, 245, 20, 0.91);
+      border: solid 1px;
+      padding: 1rem;
+    }
+    svg {
+      background-color: #333333;
+    }
+
+    .svgaxis {
+      stroke: rgb(255,255,255);
+      stroke-width: 2px;
+    }
+    .svg-flower-center{
+      stroke: orange;
+      stroke-width: 1px;
+      fill: yellow;
+    }
+    .svg-flower-petal{
+      stroke: rgb(180,180,180);
+      stroke-width: 2px;
+      fill: white;
+    }
+
+  </style>
+</head>
+<body>
+<h2>Testing library in browser with the UMD bundle</h2>
+<p>This is an example page testing the UMD version of the library inside the browser.
+  Go to the Dev Panel to have a look at the code and the console.
+</p>
+
+<script type="application/javascript">
+
+  const log = (msg) => { console.log(`%c ${msg}`, 'background: #b3e5fc; color: #000')}
+
+  let P0 = new Your_Own_Library_Name.Point();
+  log('P0 = new Point() will give P0 : ' + P0.dump());
+  P0.name = 'P0';
+  log('P0.name = \'P0\'; will give P0 : ' + P0.dump());
+  P0.x = 5;
+  P0.y = 5;
+  log('P0.x = P0.y = 5; will give P0  : ' + P0.dump());
+  log('P0.getAngleDeg() : ' + P0.getAngleDeg())
+  let P1 = new Your_Own_Library_Name.Point(1,2,'P1');
+  log('P1 = new Point(1,2)  ==> P1 : ' + P1.dump());
+  P1.move(11,15);
+  log('After P1.move(11,15);  ==> P1 : ' + P1.dump());
+  P1.moveRelative(-7,-12);
+  log('After P1.moveRelative(-7,-12);  ==> P1 : ' + P1.dump());
+  log('P1.getAngleDeg() : ' + P1.getAngleDeg())
+  log('P1.getDistanceFromOrigin() : ' + P1.getDistanceFromOrigin())
+
+
+</script>
+</body>
+</html>

@@ -34,7 +34,7 @@ This is a template to help you bundle your TypeScript **Your_Own_Library_Name** 
 
 ### Documentation
 
-The [Documentation of Your_Own_Library_Name](https://lao-tseu-is-alive.github.io/cgil-2dgeom/docs/) 
+The [Documentation of Your_Own_Library_Name](https://lao-tseu-is-alive.github.io/cgil-typescript-lib-template/docs/) 
 is available under the docs directory and can be 
 generated from  the jsdoc comments in the source code with **npm run docs**.  
 
